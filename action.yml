@@ -1,4 +1,4 @@
-name: 'Notifox'
+name: 'Notifox Alert'
 description: 'Send an alert to a Notifox audience and channel (SMS or email)'
 branding:
   icon: 'bell'
