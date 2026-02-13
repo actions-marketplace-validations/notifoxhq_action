@@ -1,0 +1,21 @@
+name: 'Notifox'
+description: 'Send an alert to a Notifox audience and channel (SMS or email)'
+branding:
+  icon: 'bell'
+  color: 'orange'
+inputs:
+  api_key:
+    description: 'Notifox API key (or set NOTIFOX_API_KEY secret)'
+    required: false
+  audience:
+    description: 'Audience to send the alert to (e.g. ops, me, oncall)'
+    required: true
+  channel:
+    description: 'Channel to use: sms or email'
+    required: true
+  message:
+    description: 'Alert message to send'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

@@ -1,0 +1,18 @@
+{
+  "name": "notifox-github-action",
+  "version": "1.0.0",
+  "description": "Send Notifox alerts from GitHub Actions",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "package": "npm run build"
+  },
+  "keywords": ["github-actions", "notifox", "notifications", "alerting"],
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.0"
+  }
+}
